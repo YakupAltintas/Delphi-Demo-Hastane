@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Menus;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Menus,formDoktorRandevuListe;
 
 type
   TfrmAnasayfaDoktor = class(TForm)
@@ -14,6 +14,7 @@ type
     Randevu1: TMenuItem;
     Randevu2: TMenuItem;
     RandevuListele1: TMenuItem;
+    procedure RandevuListele1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -22,9 +23,18 @@ type
 
 var
   frmAnasayfaDoktor: TfrmAnasayfaDoktor;
+  frmDokRandListe :TfrmDoktorRandevuListe;
 
 implementation
 
 {$R *.dfm}
+
+procedure TfrmAnasayfaDoktor.RandevuListele1Click(Sender: TObject);
+begin
+    frmDokRandListe :=TfrmDoktorRandevuListe.Create(self);
+    self.Hide;
+    frmDokRandListe.ShowModal();
+    self.Show;
+end;
 
 end.

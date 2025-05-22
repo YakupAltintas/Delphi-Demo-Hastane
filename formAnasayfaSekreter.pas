@@ -22,9 +22,9 @@ type
     Randevu2: TMenuItem;
     RandevuListele1: TMenuItem;
   private
-    { Private declarations }
+
   public
-    { Public declarations }
+
   end;
 
 var
@@ -33,5 +33,8 @@ var
 implementation
 
 {$R *.dfm}
+
+
+
 
 end.

@@ -11,6 +11,7 @@ object frmAnasayfaDoktor: TfrmAnasayfaDoktor
   Font.Name = 'Segoe UI'
   Font.Style = []
   Menu = MainMenu1
+  Position = poDesktopCenter
   TextHeight = 15
   object panelMain: TPanel
     Left = 0
@@ -18,9 +19,11 @@ object frmAnasayfaDoktor: TfrmAnasayfaDoktor
     Width = 1110
     Height = 602
     Align = alClient
+    Color = clSilver
+    ParentBackground = False
     TabOrder = 0
-    ExplicitTop = 80
-    ExplicitHeight = 612
+    ExplicitWidth = 1108
+    ExplicitHeight = 594
   end
   object panelMenu: TPanel
     Left = 0
@@ -28,7 +31,10 @@ object frmAnasayfaDoktor: TfrmAnasayfaDoktor
     Width = 1110
     Height = 65
     Align = alTop
+    Color = clActiveCaption
+    ParentBackground = False
     TabOrder = 1
+    ExplicitTop = -6
   end
   object MainMenu1: TMainMenu
     Left = 376
@@ -36,10 +42,11 @@ object frmAnasayfaDoktor: TfrmAnasayfaDoktor
     object Randevu1: TMenuItem
       Caption = 'Randevu'
       object Randevu2: TMenuItem
-        Caption = 'Randevu Olu'#351'tur'
+        Caption = 'Sevk Olu'#351'tur'
       end
       object RandevuListele1: TMenuItem
         Caption = 'Randevu Listele'
+        OnClick = RandevuListele1Click
       end
     end
   end

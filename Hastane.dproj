@@ -139,6 +139,15 @@
             <Form>frmLogin</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="formDoktorRandevuDetay.pas">
+            <Form>frmDoktorRandevuDetay</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="formDoktorRandevuListe.pas">
+            <Form>frmDoktorRandevuListe</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="csDatabase.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -164,6 +173,18 @@
                 <DeployFile LocalName="Win32\Debug\Hastane.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>Hastane.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win64\Debug\Hastane.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win64">
+                        <RemoteName>Hastane.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win64\Debug\Hastane.rsm" Configuration="Debug" Class="DebugSymbols">
+                    <Platform Name="Win64">
+                        <RemoteName>Hastane.rsm</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

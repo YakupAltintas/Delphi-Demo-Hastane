@@ -19,9 +19,8 @@ object frmAnasayfaSekreter: TfrmAnasayfaSekreter
     Height = 563
     Align = alClient
     TabOrder = 0
-    ExplicitTop = 43
     ExplicitWidth = 1110
-    ExplicitHeight = 602
+    ExplicitHeight = 555
   end
   object panelMenu: TPanel
     Left = 0
@@ -30,6 +29,7 @@ object frmAnasayfaSekreter: TfrmAnasayfaSekreter
     Height = 57
     Align = alTop
     TabOrder = 1
+    ExplicitWidth = 1110
   end
   object MainMenu1: TMainMenu
     Left = 376

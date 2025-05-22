@@ -13,41 +13,53 @@ object frmLogin: TfrmLogin
   Position = poDesktopCenter
   OnCreate = FormCreate
   TextHeight = 15
-  object Label1: TLabel
-    Left = 63
-    Top = 75
-    Width = 75
-    Height = 15
-    Caption = 'Kullan'#305'c'#305' Ad'#305' : '
-  end
-  object Label2: TLabel
-    Left = 104
-    Top = 115
-    Width = 32
-    Height = 15
-    Caption = #350'ifre : '
-  end
-  object editUsername: TEdit
-    Left = 144
-    Top = 72
-    Width = 121
-    Height = 23
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 408
+    Height = 237
+    Align = alClient
+    Color = clInactiveCaption
+    ParentBackground = False
     TabOrder = 0
-  end
-  object editPassword: TEdit
-    Left = 144
-    Top = 112
-    Width = 121
-    Height = 23
-    TabOrder = 1
-  end
-  object btnGirisYap: TButton
-    Left = 144
-    Top = 149
-    Width = 121
-    Height = 28
-    Caption = 'Giri'#351' Yap'
-    TabOrder = 2
-    OnClick = btnGirisYapClick
+    ExplicitWidth = 406
+    ExplicitHeight = 229
+    object Label1: TLabel
+      Left = 63
+      Top = 75
+      Width = 75
+      Height = 15
+      Caption = 'Kullan'#305'c'#305' Ad'#305' : '
+    end
+    object Label2: TLabel
+      Left = 104
+      Top = 115
+      Width = 32
+      Height = 15
+      Caption = #350'ifre : '
+    end
+    object editUsername: TEdit
+      Left = 144
+      Top = 72
+      Width = 121
+      Height = 23
+      TabOrder = 0
+    end
+    object editPassword: TEdit
+      Left = 144
+      Top = 112
+      Width = 121
+      Height = 23
+      TabOrder = 1
+    end
+    object btnGirisYap: TButton
+      Left = 144
+      Top = 149
+      Width = 121
+      Height = 28
+      Caption = 'Giri'#351' Yap'
+      TabOrder = 2
+      OnClick = btnGirisYapClick
+    end
   end
 end
